@@ -1,0 +1,107 @@
+body {
+    background-color:#1A2130;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header {
+    background-color: #FDFFE2;
+    padding: 10px 20px;
+}
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-item {
+    margin-right: 20px;
+}
+.nav-link {
+    text-decoration: none;
+    color: #5A72A0;
+    font-weight: 600;
+    font-family: "Playwrite IS", cursive;
+    transition: color 0.3s;
+}
+.nav-link:hover {
+    color: #3B4D72;
+}
+footer {
+    text-align: right;
+    background-color: #FDFFE2;
+    color: #5A72A0;
+    font-family: "Playwrite IS", cursive;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+.main {
+    margin: 10px 50px;
+    padding: 0px 20px 20px 2px;
+    flex:1
+}
+#name {
+    text-transform: capitalize;
+    color: #FDFFE2;
+    font-family: "Playwrite SK", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+#name-decorate {
+    color: #5A72A0
+}
+.tile-img {
+    border: 3px solid #5A72A0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.card {
+    text-align: justify;
+    margin-top: 20px;
+    width: 100%;
+}
+.card-title {
+    color: #FDFFE2;
+    text-transform: capitalize;
+    font-family: "Playwrite IS", cursive;
+}
+.card-text {
+    color: #FDFFE2;
+    font-family: "Playwrite IS", cursive;
+}
+.left > .tile-img {
+    float: left;
+    margin-right: 50px;
+}
+.right > .tile-img {
+    float: right;
+    margin-left: 50px;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+@media (max-width: 700px) {
+    #name {
+        font-size: larger;
+        text-align: center;
+    }
+    .nav-list {
+        justify-content: center;
+    }
+    .card{
+        width: 100%;
+        margin-bottom: 50px;
+        display: block;
+    }
+    .tile-img {
+        margin-bottom: 10px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
